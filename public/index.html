@@ -4,30 +4,17 @@
     <meta charset="utf-8">
     <title></title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/css/main.css">
     <script async defer src="https://buttons.github.io/buttons.js"></script>
     <style>
-      .title{
-        background: black;
-        color: white;
-        font-weight: 200;
-        padding: 5px 10px;
-      }
-  </style>
+    html, body { 
+      margin:   0px; 
+      padding:  0px; 
+      height:   100%; 
+    }
+    </style>
   </head>
   <body>
-    <section id="components">
-      <!-- With @Polymer, now you can import  directly a specific module.-->
-      <!-- <script type="module" src="./js/components/example.js"></script> -->
-      <script type="module" src="./js/components/app-polymer.js"></script>
-      
-      <!-- <str-comp header="This is an important header" foot="this is not important">This is an important body</str-comp>
-      <button-event>Event Call</button-event>
-      <button-func name="calling a funcion">Funcion Call</button-func>
-      <add-sub></add-sub> -->
-      <app-polymer></app-polymer>
-    </section>
-    <!-- <script src="/js/components/vendor.js"></script>
-    <script src="/js/components/firstComp.js"></script> -->
+    <script type="module" src="./js/components/app-polymer.js"></script>
+    <app-polymer></app-polymer>
   </body>
 </html>

@@ -11,19 +11,50 @@ export default class SideMenu extends LitElement {
 
   _render() {
     return html`
-      <section id="side-menu">
-        <div class="logo"></div>
-        <div class="menu">
-          <div class="title">
-            <nav>
-              <a href="#">Add Contact</a>
-              <a href="#">Add Contact</a>
-              <a href="#">Add Contact</a>
-              <a href="#">Add Contact</a>
-            </nav>
-          </div>
-        </div>
-      </section>
+    <style>
+      #side-menu {
+        background: #5ECE2E;
+        float:      left;
+        width:      15%;
+        min-height: 100%;
+      }
+
+      #side-menu nav a {
+        background:       green;
+        display:          block;
+        text-decoration:  none;
+        text-transform:   uppercase;
+        padding:          5px;
+        margin:           5px;
+      }
+
+      #side-menu nav a span.icon {
+        padding:    5px;
+      }
+    </style>
+    <section id="side-menu">
+      <div class="menu">
+        <div class="title">Actions</div>
+        <nav>
+          <a href="#">
+            <span class="icon"> + </span>
+            Add Client
+          </a>
+          <a href="#">
+            <span class="icon"> + </span>
+            Make Payment
+          </a>
+          <a href="#">
+            <span class="icon"> + </span>
+            Get Payments
+          </a>
+          <a href="#">
+            <span class="icon"> + </span>
+            Get Exchange Rate
+          </a>
+        </nav>
+      <div>
+    </section>
     `
   }
 }

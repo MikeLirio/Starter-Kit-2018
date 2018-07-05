@@ -11,6 +11,8 @@ export default class ContactElement extends LitElement {
 
   _render() {
     return html`
+      <style>
+      </style>
       <div class="contact">
         <div class="usr-image"></div>
         <div class="fullname">

@@ -12,6 +12,13 @@ export default class ContentArea extends LitElement {
 
   _render() {
     return html`
+    <style>
+      #content-area {
+        float:        left;
+        width:        85%;
+        height:       100%;
+      }
+    </style>
       <section id="content-area">
         <contact-list></contact-list>
       </section>
